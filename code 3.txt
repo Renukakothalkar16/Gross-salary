@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float basicSalary, salesAmount, commission, grossSalary;
+
+    // Input basic salary and sales amount
+    printf("Enter the basic salary: ");
+    scanf("%f", &basicSalary);
+    printf("Enter the sales amount: ");
+    scanf("%f", &salesAmount);
+
+    // Calculate commission (assuming 10% commission on sales)
+    commission = 0.10 * salesAmount;
+
+    // Calculate gross salary
+    grossSalary = basicSalary + commission;
+
+    // Display the gross salary
+    printf("The gross salary is: %.2f\n", grossSalary);
+
+    return 0;
+}
